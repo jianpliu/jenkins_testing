@@ -27,7 +27,7 @@ do
     cp ${jmx_template_filename} ${jmx_filename}
     echo "Éú³ÉjmxÑ¹²â½Å±¾ ${jmx_filename}"
 
-    if [[ "${os_type}"=="Darwin" ]];then
+    if [[ "${os_type}"=="Darwin" ]]; then
         sed -i "" "s/thread_num/${num}/g" ${jmx_filename}
     else
         sed -i "s/thread_num/${num}/g" ${jmx_filename}
