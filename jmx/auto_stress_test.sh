@@ -4,7 +4,7 @@
 export jmx_template="iInterface"
 export suffix=".jmx"
 export jmx_template_filename="${jmx_template}${suffix}"
-export os_type='uname'
+export os_type=`uname`
 
 #需要在系统变量中定义jmeter根目录位置如下
 #export jmeter_path="/your jmeter path/"
