@@ -28,13 +28,13 @@ do
     echo ${jmx_template_filename}
     echo ${jmx_filename}
     mkdir aa
-    cp ./${jmx_template_filename} ./${jmx_filename}
+    cp ${jmx_template_filename} ${jmx_filename}
     echo "create jmx stress test scriptes ${jmx_filename}"
 
     if [[ "${os_type}"=="Darwin" ]]; then
-        sed -i "" "s/thread_number/${num}/g" ${jmx_filename}
+        sed -i "" "s/thread_num/${num}/g" ${jmx_filename}
     else
-        sed -i "s/thread_number/${num}/g" ${jmx_filename}
+        sed -i "s/thread_num/${num}/g" ${jmx_filename}
      fi
 
 
