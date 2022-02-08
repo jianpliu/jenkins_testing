@@ -14,8 +14,8 @@ echo "auto_stress_test start..."
 
 
 #压测并发数列表
-thread_num_array=(10 20 30)
-for num in "${thread_num_array[@]}"
+thread_number_array=(10 20 30)
+for num in "${thread_number_array[@]}"
 do
     #生成对应压测线程的jmx文件
     export jmx_filename="${jmx_template}_${num}${suffix}"
@@ -32,9 +32,9 @@ do
     echo "create jmx stress test scriptes ${jmx_filename}"
 
     if [[ "${os_type}"=="Darwin" ]]; then
-        sed -i "" "s/thread_num/${num}/g" ${jmx_filename}
+        sed -i "" "s/thread_number/${num}/g" ${jmx_filename}
     else
-        sed -i "s/thread_num/${num}/g" ${jmx_filename}
+        sed -i "s/thread_number/${num}/g" ${jmx_filename}
      fi
 
 
@@ -44,6 +44,6 @@ do
      #生成Web压测报告
      ${jmeter_path}/bin/jmeter -g ${jtl_filename} -e -o ${web_report_path_name}
 
-     #rm -f ${jmx_filename} ${jtl_filename}
+     rm -f ${jmx_filename} ${jtl_filename}
 done
 echo "auto stress test finish"
