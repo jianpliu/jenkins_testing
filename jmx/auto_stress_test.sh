@@ -25,6 +25,8 @@ do
     rm -f ${jmx_filename} ${jtl_filename}
     rm -rf ${web_report_path_name}
 
+    echo ${jmx_template_filename}
+    echo ${jmx_filename}
     cp ${jmx_template_filename} ${jmx_filename}
     echo "create jmx stress test scriptes ${jmx_filename}"
 
