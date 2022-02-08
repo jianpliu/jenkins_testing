@@ -90,13 +90,13 @@
           <entry key="gitignore" value="9" />
           <entry key="md" value="183" />
           <entry key="py" value="16" />
-          <entry key="sh" value="1155" />
+          <entry key="sh" value="1183" />
           <entry key="txt" value="153" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="214" />
+          <entry key="Bash" value="242" />
           <entry key="Git file" value="9" />
           <entry key="Markdown" value="183" />
           <entry key="PLAIN_TEXT" value="1106" />
@@ -150,8 +150,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jmx/auto_stress_test.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-390">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="1260">
+              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -630,7 +630,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644296346145</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add shell script&amp;jmx">
+      <created>1644300433851</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1644300433851</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add shell script&amp;jmx">
+      <created>1644300591959</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1644300591959</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -660,7 +674,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
@@ -777,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jmx/auto_stress_test.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="1260">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
         </state>
       </provider>
     </entry>
