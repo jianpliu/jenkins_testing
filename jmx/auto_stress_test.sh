@@ -31,14 +31,14 @@ do
     cp ${jmx_template_filename} ${jmx_filename}
     echo "create jmx stress test scriptes ${jmx_filename}"
 
-    if [[ "${os_type}"=="Darwin" ]]; then
-        sed -i "" "s/thread_num/${num}/g" ${jmx_filename}
-        echo "ssssssssss"
-    else
-        sed -i "s/thread_num/${num}/g" ${jmx_filename}
-     fi
+#    if [[ "${os_type}"=="Darwin" ]]; then
+#        sed -i "" "s/thread_num/${num}/g" ${jmx_filename}
+#
+#    else
+#        sed -i "s/thread_num/${num}/g" ${jmx_filename}
+#     fi
 
-
+     sed -i "s/thread_num/${num}/g" ${jmx_filename}
      #JMeter¾²Ä¬Ñ¹²â
      ${jmeter_path}/bin/jmeter -n -t ${jmx_filename} -l ${jtl_filename}
 
