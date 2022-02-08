@@ -9,7 +9,7 @@ export os_type=`uname`
 
 #需要在系统变量中定义jmeter根目录位置如下
 #export jmeter_path="/your jmeter path/"
-
+export jmeter_path="/jmeter/apache-jmeter-5.4.3/apache-jmeter-5.4.3"
 echo "auto_stress_test start..."
 
 
@@ -40,10 +40,11 @@ do
 
      sed -i "s/thread_num/${num}/g" ${jmx_filename}
      #JMeter静默压测
-     ${jmeter_home}/bin/jmeter -n -t ${jmx_filename} -l ${jtl_filename}
+     echo ${jmeter_path}/bin/jmeter
+     ${jmeter_path}/bin/jmeter -n -t ${jmx_filename} -l ${jtl_filename}
 
      #生成Web压测报告
-     ${jmeter_home}/bin/jmeter -g ${jtl_filename} -e -o ${web_report_path_name}
+     ${jmeter_path}/bin/jmeter -g ${jtl_filename} -e -o ${web_report_path_name}
 
      rm -f ${jmx_filename} ${jtl_filename}
 done
