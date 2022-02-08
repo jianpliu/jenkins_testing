@@ -27,7 +27,7 @@ do
 
     echo ${jmx_template_filename}
     echo ${jmx_filename}
-    cp ${jmx_template_filename} ${jmx_filename}
+    cp ./${jmx_template_filename} ./${jmx_filename}
     echo "create jmx stress test scriptes ${jmx_filename}"
 
     if [[ "${os_type}"=="Darwin" ]]; then
