@@ -33,6 +33,7 @@ do
 
     if [[ "${os_type}"=="Darwin" ]]; then
         sed -i "" "s/thread_num/${num}/g" ${jmx_filename}
+        echo "ssssssssss"
     else
         sed -i "s/thread_num/${num}/g" ${jmx_filename}
      fi
