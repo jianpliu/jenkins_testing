@@ -11,7 +11,7 @@ export os_type=`uname`
 #export jmeter_path="/your jmeter path/"
 #export jmeter_path="/jmeter/apache-jmeter-5.4.3/apache-jmeter-5.4.3"
 echo "auto_stress_test start..."
-echo "开始测试..."
+
 
 #压测并发数列表
 thread_number_array=(10 20 30)
